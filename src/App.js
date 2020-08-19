@@ -1,10 +1,14 @@
 import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import "./App.css";
+import Home from "./components";
 
 function App() {
   return (
     <div className="App">
-      <h2>Welcome to Rashmika's World</h2>
+      <CssBaseline>
+        <Home />
+      </CssBaseline>
     </div>
   );
 }
