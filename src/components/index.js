@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   particlescanva: {
     position: "absolute",
+    opacity: "0.9",
   },
 });
 
@@ -21,10 +22,10 @@ const Home = () => {
         params={{
           particles: {
             number: {
-              value: 45,
+              value: 30,
               density: {
                 enable: true,
-                value_area: 900,
+                value_area: 1000,
               },
             },
             shape: {
@@ -35,12 +36,22 @@ const Home = () => {
               },
             },
             size: {
-              value: 8,
+              value: 5,
               random: true,
               anim: {
                 enable: false,
-                speed: 6,
+                speed: 2,
                 size_min: 0.1,
+                sync: true,
+              },
+            },
+            opacity: {
+              value: 5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0.1,
                 sync: true,
               },
             },
